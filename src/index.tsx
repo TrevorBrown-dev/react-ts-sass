@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
-import * as ServiceWorkerRegistration from "./etc/serviceWorkerRegistration";
-import reportWebVitals from './etc/reportWebVitals';
+import {register} from "./serviceWorkerRegistration";
+import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -10,6 +10,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-ServiceWorkerRegistration.register();
+register();
 reportWebVitals();
 
